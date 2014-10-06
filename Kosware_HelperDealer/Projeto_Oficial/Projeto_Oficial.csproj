@@ -46,7 +46,7 @@
     <Compile Include="ModeloDominio\Entidades\Pessoa.cs" />
     <Compile Include="ModeloDominio\Entidades\Produto.cs" />
     <Compile Include="ModeloDominio\Entidades\Vendedor.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Telas\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModeloDominio\Controladores\" />
-    <Folder Include="Telas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

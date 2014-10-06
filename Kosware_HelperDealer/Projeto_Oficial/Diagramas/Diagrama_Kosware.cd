@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kosware_Helper_Dealer.Entidades.Cliente" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModeloDominio\Entidades\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kosware_Helper_Dealer.Entidades.Pedido">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACQAAAAAAAAAAAAAAAAAAQAAQAAAQBAAAAAA=</HashCode>
+      <FileName>ModeloDominio\Entidades\Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kosware_Helper_Dealer.Entidades.Pessoa" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAEAA=</HashCode>
+      <FileName>ModeloDominio\Entidades\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kosware_Helper_Dealer.Entidades.Produto">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQBAAAAgAAAAAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>ModeloDominio\Entidades\Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kosware_Helper_Dealer.Entidades.Vendedor" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModeloDominio\Entidades\Vendedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

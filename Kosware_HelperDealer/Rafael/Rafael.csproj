@@ -4,28 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{87D58DD7-256B-4EE9-9F94-78036A3AE796}</ProjectGuid>
+    <ProjectGuid>{FE5BF789-22A1-4355-8F9E-A50CEDC8635B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Projeto_Oficial</RootNamespace>
-    <AssemblyName>Projeto_Oficial</AssemblyName>
+    <RootNamespace>Rafael</RootNamespace>
+    <AssemblyName>Rafael</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <PublishUrl>publicar\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -56,38 +41,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModeloDominio\Entidades\Cliente.cs" />
-    <Compile Include="ModeloDominio\Entidades\Pedido.cs" />
-    <Compile Include="ModeloDominio\Entidades\Pessoa.cs" />
-    <Compile Include="ModeloDominio\Entidades\Produto.cs" />
-    <Compile Include="ModeloDominio\Entidades\Vendedor.cs" />
+    <Compile Include="Jeqiti\Controle\ControlaAgenda.cs" />
+    <Compile Include="Jeqiti\Controle\ControlaCliente.cs" />
+    <Compile Include="Jeqiti\Controle\ControlaPedido.cs" />
+    <Compile Include="Jeqiti\Controle\ControlaProduto.cs" />
+    <Compile Include="Jeqiti\Controle\ControlaVendedor.cs" />
+    <Compile Include="Jeqiti\Dominios\Cliente.cs" />
+    <Compile Include="Jeqiti\Dominios\Pedido.cs" />
+    <Compile Include="Jeqiti\Dominios\Pessoa.cs" />
+    <Compile Include="Jeqiti\Dominios\Produto.cs" />
+    <Compile Include="Jeqiti\Dominios\Vendedor.cs" />
+    <Compile Include="Jeqiti\Interfaces\IAgenda.cs" />
+    <Compile Include="Jeqiti\Interfaces\ICliente.cs" />
+    <Compile Include="Jeqiti\Interfaces\IPedido.cs" />
+    <Compile Include="Jeqiti\Interfaces\IProduto.cs" />
+    <Compile Include="Jeqiti\Interfaces\IVendedor.cs" />
+    <Compile Include="Jeqiti\Telas\MenuAgenda.cs" />
+    <Compile Include="Jeqiti\Telas\MenuCliente.cs" />
+    <Compile Include="Jeqiti\Telas\MenuInicial.cs" />
+    <Compile Include="Jeqiti\Telas\MenuPedido.cs" />
+    <Compile Include="Jeqiti\Telas\MenuProduto.cs" />
+    <Compile Include="Jeqiti\Telas\MenuVendedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\Principal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Diagramas\Diagrama_Kosware.cd" />
-    <None Include="Documentacao\EQUIPE 5 - SOFTWARE PARA AUXILIAR REVENDEDORES COSMÉTICOS E PRODUTOS DE HIGIENE PESSOA.docx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ModeloDominio\Controladores\" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
+    <None Include="Jeqiti\Diagrama\ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

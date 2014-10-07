@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AprendendoProgram.Jeqiti.Cliente" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Dominios\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Pedido" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACQAAAAAAAAAIAAAAAAAAQAAQAAAQBAAAAAA=</HashCode>
+      <FileName>Jeqiti\Dominios\Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Pessoa" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAEAA=</HashCode>
+      <FileName>Jeqiti\Dominios\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Produto" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQBAAAAgAAAAAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>Jeqiti\Dominios\Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Vendedor" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Dominios\Vendedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Telas.MenuCliente" Collapsed="true">
+    <Position X="13.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Telas\MenuCliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Telas.MenuPedido" Collapsed="true">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Telas\MenuPedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Telas.MenuProduto" Collapsed="true">
+    <Position X="17.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Jeqiti\Telas\MenuProduto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Telas.MenuVendedor" Collapsed="true">
+    <Position X="15.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Telas\MenuVendedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.MenuInicial" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAA=</HashCode>
+      <FileName>Jeqiti\Telas\MenuInicial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Telas.MenuAgenda" Collapsed="true">
+    <Position X="14.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Telas\MenuAgenda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Controle.ControlaAgenda" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Controle\ControlaAgenda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Controle.ControlaCliente" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEBA=</HashCode>
+      <FileName>Jeqiti\Controle\ControlaCliente.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Controle.ControlaPedido" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAEAQAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Jeqiti\Controle\ControlaPedido.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Controle.ControlaProduto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAABAAEAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Controle\ControlaProduto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AprendendoProgram.Jeqiti.Controle.ControlaVendedor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Controle\ControlaVendedor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="AprendendoProgram.Jeqiti.Interfaces.IAgenda" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Interfaces\IAgenda.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AprendendoProgram.Jeqiti.Interfaces.ICliente" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEBA=</HashCode>
+      <FileName>Jeqiti\Interfaces\ICliente.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AprendendoProgram.Jeqiti.Interfaces.IPedido" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAEAQAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Jeqiti\Interfaces\IPedido.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AprendendoProgram.Jeqiti.Interfaces.IProduto" Collapsed="true">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAABAAEAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Interfaces\IProduto.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AprendendoProgram.Jeqiti.Interfaces.IVendedor" Collapsed="true">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jeqiti\Interfaces\IVendedor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

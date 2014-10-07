@@ -11,6 +11,21 @@
     <AssemblyName>Projeto_Oficial</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +61,27 @@
     <Compile Include="ModeloDominio\Entidades\Pessoa.cs" />
     <Compile Include="ModeloDominio\Entidades\Produto.cs" />
     <Compile Include="ModeloDominio\Entidades\Vendedor.cs" />
+    <Compile Include="Rafael\Jeqiti\Controle\ControlaAgenda.cs" />
+    <Compile Include="Rafael\Jeqiti\Controle\ControlaCliente.cs" />
+    <Compile Include="Rafael\Jeqiti\Controle\ControlaPedido.cs" />
+    <Compile Include="Rafael\Jeqiti\Controle\ControlaProduto.cs" />
+    <Compile Include="Rafael\Jeqiti\Controle\ControlaVendedor.cs" />
+    <Compile Include="Rafael\Jeqiti\Dominios\Cliente.cs" />
+    <Compile Include="Rafael\Jeqiti\Dominios\Pedido.cs" />
+    <Compile Include="Rafael\Jeqiti\Dominios\Pessoa.cs" />
+    <Compile Include="Rafael\Jeqiti\Dominios\Produto.cs" />
+    <Compile Include="Rafael\Jeqiti\Dominios\Vendedor.cs" />
+    <Compile Include="Rafael\Jeqiti\Interfaces\IAgenda.cs" />
+    <Compile Include="Rafael\Jeqiti\Interfaces\ICliente.cs" />
+    <Compile Include="Rafael\Jeqiti\Interfaces\IPedido.cs" />
+    <Compile Include="Rafael\Jeqiti\Interfaces\IProduto.cs" />
+    <Compile Include="Rafael\Jeqiti\Interfaces\IVendedor.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuAgenda.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuCliente.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuInicial.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuPedido.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuProduto.cs" />
+    <Compile Include="Rafael\Jeqiti\Telas\MenuVendedor.cs" />
     <Compile Include="Telas\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,9 +89,27 @@
     <None Include="App.config" />
     <None Include="Diagramas\Diagrama_Kosware.cd" />
     <None Include="Documentacao\EQUIPE 5 - SOFTWARE PARA AUXILIAR REVENDEDORES COSMÉTICOS E PRODUTOS DE HIGIENE PESSOA.docx" />
+    <None Include="Rafael\Jeqiti\Diagrama\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModeloDominio\Controladores\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

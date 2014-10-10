@@ -57,6 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModeloDominio\Controladores\ControladorCliente.cs" />
+    <Compile Include="ModeloDominio\Controladores\ControladorPedido.cs" />
+    <Compile Include="ModeloDominio\Controladores\ControladorProduto.cs" />
+    <Compile Include="ModeloDominio\Controladores\ControladorRelatorio.cs" />
+    <Compile Include="ModeloDominio\Controladores\ControladorVendedor.cs" />
     <Compile Include="ModeloDominio\Entidades\Cliente.cs" />
     <Compile Include="ModeloDominio\Entidades\Pedido.cs" />
     <Compile Include="ModeloDominio\Entidades\Pessoa.cs" />

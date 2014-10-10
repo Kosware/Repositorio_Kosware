@@ -41,11 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ModeloDominio\Controladores\GeradorRelatórios.cs" />
+    <Compile Include="ModeloDominio\Entidades\Cliente.cs" />
+    <Compile Include="ModeloDominio\Entidades\Pedido.cs" />
+    <Compile Include="ModeloDominio\Entidades\Pessoa.cs" />
+    <Compile Include="ModeloDominio\Entidades\Produto.cs" />
+    <Compile Include="ModeloDominio\Entidades\Vendedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Telas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

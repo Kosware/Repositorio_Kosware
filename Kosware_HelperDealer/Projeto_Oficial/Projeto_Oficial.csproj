@@ -73,6 +73,7 @@
     <None Include="App.config" />
     <None Include="Diagramas\Diagrama_Kosware.cd" />
     <None Include="Documentacao\EQUIPE 5 - SOFTWARE PARA AUXILIAR REVENDEDORES COSMÉTICOS E PRODUTOS DE HIGIENE PESSOA.docx" />
+    <None Include="Documentacao\Especifações Kosware.docx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

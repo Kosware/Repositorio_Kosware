@@ -9,13 +9,13 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
 {
     class ControladorVendedor
     {
-        private Cliente cliente;
-        private List<Cliente> clientes = new List<Cliente>();
+        private Cliente vendedor;
+        private List<Cliente> vendedores = new List<Cliente>();
 
-        internal List<Cliente> Clientes
+        internal List<Cliente> Vendedores
         {
-            get { return clientes; }
-            set { clientes = value; }
+            get { return vendedores; }
+            set { vendedores = value; }
         }
 
 

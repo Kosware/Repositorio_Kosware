@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\ControladorProduto.cs" />
-    <Compile Include="Entidades\Produto.cs" />
+    <Compile Include="ModeloDeDominio\Controladores\ControladorProduto.cs" />
+    <Compile Include="ModeloDeDominio\Entidades\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tela\MenuInicial.cs" />
-    <Compile Include="Tela\MenuProduto.cs" />
+    <Compile Include="Telas\MenuInicial.cs" />
+    <Compile Include="Telas\MenuProduto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

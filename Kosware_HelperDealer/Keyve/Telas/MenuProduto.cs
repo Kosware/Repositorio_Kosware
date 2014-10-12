@@ -1,11 +1,7 @@
-﻿using Keyve.Controlador;
+﻿using Keyve.ModeloDeDominio.Controladores;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Keyve.Tela
+namespace Keyve.Telas
 {
     public class MenuProduto : MenuInicial
     {
@@ -35,26 +31,34 @@ namespace Keyve.Tela
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
                         controladorProduto.Cadastrar();
-                        Console.ReadKey();
                         break;
+
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
+                        controladorProduto.Listar();
                         break;
+
                     case ConsoleKey.D3:
                     case ConsoleKey.NumPad3:
-                        //Console.WriteLine("Finalizando Aplicacao");
+                        controladorProduto.Remove();
                         break;
+
                     case ConsoleKey.D4:
                     case ConsoleKey.NumPad4:
+                        controladorProduto.Alterar();
                         break;
+
                     case ConsoleKey.D5:
                     case ConsoleKey.NumPad5:
+                        Console.WriteLine("AJUDA");
                         break;
+
                     case ConsoleKey.Escape:
                         Console.Clear();
                         MenuIni();
                         break;
                 }
+                Console.ReadKey();
             } while (opcao != ConsoleKey.Escape);
         }
     }

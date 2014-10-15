@@ -17,5 +17,21 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
             get { return produtos; }
             set { produtos = value; }
         }
+
+        public int Pesquisa(int codigo)
+        {
+            int posicao = -1;
+
+            for (int i = 0; i < this.produtos.Count; i++)
+            {
+                if (codigo == produtos[i].Codigo)
+                {
+                    posicao = i;
+                    break;
+                }
+            }
+
+            return posicao;
+        }
     }
 }

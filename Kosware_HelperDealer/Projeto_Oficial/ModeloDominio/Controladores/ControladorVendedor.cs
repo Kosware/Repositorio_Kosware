@@ -18,6 +18,20 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
             set { vendedores = value; }
         }
 
+        public int Pesquisa(int codigo)
+        {
+            int posicao = -1;
 
+            for (int i = 0; i < this.vendedores.Count; i++)
+            {
+                if (codigo == vendedores[i].Codigo)
+                {
+                    posicao = i;
+                    break;
+                }
+            }
+
+            return posicao;
+        }
     }
 }

@@ -119,6 +119,106 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
             }
         }
 
+        public void GerarRelatorioPorVendedor()
+        {
+            double totalVendido = 0;
+
+            try
+            {
+                Console.Write("Informe o código do vendedor: ");
+                int codigoVendedor = int.Parse(Console.ReadLine());
+
+                if (this.controladorVendedor.Pesquisa(codigoVendedor) == -1)
+                    Console.WriteLine("ATENÇÃO: Cliente não foi encontrado! Verifique código informado!");
+                else
+                {
+                    string folder = @"C:\Kosware_HelperDealer";
+                    if (!Directory.Exists(folder))
+                        Directory.CreateDirectory(folder);
+                    TextWriter escritor = new StreamWriter(@"C:\Kosware_HelperDealer\Relatorio_Kosware.txt");
+                    escritor.WriteLine("          PEDIDOS");
+                    escritor.WriteLine("Pedidos do Vendedor: {0}", this.controladorVendedor.Vendedores[codigoVendedor].Nome);
+
+                    escritor.WriteLine("Lista de Pedidos: ");
+
+                    foreach (Pedido pedido in controladorPedido.Pedidos)
+                    {
+                        if (pedido.IdVendedor == codigoVendedor)
+                        {
+                            escritor.WriteLine("Código: {0}", pedido.Codigo);
+                            escritor.WriteLine("Data do pedido: {0}", pedido.DataPedido.ToLongDateString());
+                            escritor.WriteLine("Data prevista da entrega: {0}", pedido.DataEntrega.ToLongDateString());
+                            escritor.WriteLine("Cliente: {0}", this.controladorCliente.Clientes[pedido.IdCliente].Nome);
+                            escritor.WriteLine("Vendedor: {0}", this.controladorVendedor.Vendedores[pedido.IdVendedor].Nome);
+                            escritor.WriteLine("Produto: {0}", this.controladorProduto.Produtos[pedido.IdProduto].Nome);
+                            escritor.WriteLine("Quantidade do produto: {0}", pedido.Quantidade);
+                            escritor.WriteLine("Total: R$ {0:F2}", pedido.Total);
+                            escritor.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+                            totalVendido += pedido.Total;
+                        }
+                    }
+
+                    escritor.WriteLine("Valor Total de Vendas: R$ {0:F2}", totalVendido);
+                    escritor.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ATENÇÃO: {0}", e.Message);
+                return;
+            }
+        }
+
+        public void GerarRelatorioPorProduto()
+        {
+            double totalVendido = 0;
+
+            try
+            {
+                Console.Write("Informe o código do vendedor: ");
+                int codigoProduto = int.Parse(Console.ReadLine());
+
+                if (this.controladorProduto.Pesquisa(codigoProduto) == -1)
+                    Console.WriteLine("ATENÇÃO: Produto não foi encontrado! Verifique código informado!");
+                else
+                {
+                    string folder = @"C:\Kosware_HelperDealer";
+                    if (!Directory.Exists(folder))
+                        Directory.CreateDirectory(folder);
+                    TextWriter escritor = new StreamWriter(@"C:\Kosware_HelperDealer\Relatorio_Kosware.txt");
+                    escritor.WriteLine("          PEDIDOS");
+                    escritor.WriteLine("Pedidos do Produto: {0}", this.controladorProduto.Produtos[codigoProduto].Nome);
+
+                    escritor.WriteLine("Lista de Pedidos: ");
+
+                    foreach (Pedido pedido in controladorPedido.Pedidos)
+                    {
+                        if (pedido.IdProduto == codigoProduto)
+                        {
+                            escritor.WriteLine("Código: {0}", pedido.Codigo);
+                            escritor.WriteLine("Data do pedido: {0}", pedido.DataPedido.ToLongDateString());
+                            escritor.WriteLine("Data prevista da entrega: {0}", pedido.DataEntrega.ToLongDateString());
+                            escritor.WriteLine("Cliente: {0}", this.controladorCliente.Clientes[pedido.IdCliente].Nome);
+                            escritor.WriteLine("Vendedor: {0}", this.controladorVendedor.Vendedores[pedido.IdVendedor].Nome);
+                            escritor.WriteLine("Produto: {0}", this.controladorProduto.Produtos[pedido.IdProduto].Nome);
+                            escritor.WriteLine("Quantidade do produto: {0}", pedido.Quantidade);
+                            escritor.WriteLine("Total: R$ {0:F2}", pedido.Total);
+                            escritor.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+                            totalVendido += pedido.Total;
+                        }
+                    }
+
+                    escritor.WriteLine("Valor Total de Vendas: R$ {0:F2}", totalVendido);
+                    escritor.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ATENÇÃO: {0}", e.Message);
+                return;
+            }
+        }
+
         public void ObterRelatorio()
         {
             try

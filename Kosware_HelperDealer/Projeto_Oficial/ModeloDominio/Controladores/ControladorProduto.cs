@@ -1,13 +1,9 @@
-﻿using System;
+﻿using Kosware_Helper_Dealer.Entidades;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Kosware_Helper_Dealer.Entidades;
-using System.Threading.Tasks;
 
 namespace Projeto_Oficial.ModeloDominio.Controladores
 {
-    class ControladorProduto
+    internal class ControladorProduto
     {
         private Produto produto;
         private List<Produto> produtos = new List<Produto>();

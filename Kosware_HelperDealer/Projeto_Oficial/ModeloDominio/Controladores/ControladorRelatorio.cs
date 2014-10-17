@@ -60,6 +60,9 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
                 }
 
                 escritor.WriteLine("Valor Total de Vendas: R$ {0:F2}", totalVendido);
+                double comissao = CalcularComissao(totalVendido);
+                escritor.WriteLine("Comissão do Vendedor: R$ {0:F2}", comissao);
+                escritor.WriteLine("Comissão da Empresa:R$ {0:F2}", totalVendido - comissao);
                 escritor.Close();
             }
             catch (Exception e)
@@ -216,6 +219,45 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
             {
                 Console.WriteLine("ATENÇÃO: {0}", e.Message);
                 return;
+            }
+        }
+
+        public double CalcularComissao(double totalVendas)
+        {
+            Console.Write("Informe a parcela de comissão (%): ");
+            int comissao = int.Parse(Console.ReadLine());
+            if (comissao >= 0 && comissao <= 100)
+                return totalVendas / 100 * comissao;
+            else
+                throw new ArgumentException("Não foi possível calcular a comissão!");
+        }
+
+        public void CalcularComissao()
+        {
+            DateTime dataInicio, dataTermino;
+            double totalVendido = 0;
+
+            try
+            {
+                Console.WriteLine("Informe a data de inicio: ");
+                dataInicio = DateTime.Parse(Console.ReadLine());
+                Console.WriteLine("Informe a data de termino: ");
+                dataTermino = DateTime.Parse(Console.ReadLine());
+
+                foreach (Pedido pedido in controladorPedido.Pedidos)
+                {
+                    if (dataInicio >= pedido.DataPedido && dataTermino <= pedido.DataPedido)
+                        totalVendido += pedido.Total;
+                }
+
+                Console.WriteLine("Valor Total de Vendas: R$ {0:F2}", totalVendido);
+                double comissao = CalcularComissao(totalVendido);
+                Console.WriteLine("Comissão do Vendedor: R$ {0:F2}", comissao);
+                Console.WriteLine("Comissão da Empresa: R$ {0:F2}", totalVendido - comissao);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ATENÇÃO: {0}", e.Message);
             }
         }
 

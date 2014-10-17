@@ -49,7 +49,7 @@ namespace AprendendoProgram.Jeqiti.Controle
         }
         public void ListaClientes()
         {
-            foreach (var lista in ListaCliente)
+            foreach (var lista in ListaCliente.OrderBy(n => n.Nome))
             {
                 Console.WriteLine("Nome do cliente: " + lista.Nome);
                 Console.WriteLine("Codigo do cliente: " + lista.Codigo);

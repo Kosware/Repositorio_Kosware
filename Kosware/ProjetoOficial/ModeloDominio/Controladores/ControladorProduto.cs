@@ -54,9 +54,7 @@ namespace Keyve.ModeloDeDominio.Controladores
         {
             Console.WriteLine(" ========== LISTA DE PRODUTOS ========== ");
             if (this.produtos.Count == 0)
-            {
                 Console.WriteLine("ATENÇÃO: Não há produtos adicionados");
-            }
             else
             {
                 foreach (Produto p in this.produtos)

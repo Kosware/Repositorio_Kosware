@@ -12,12 +12,15 @@ namespace Projeto_Oficial.ModeloDominio.Controladores
         private Pedido pedido;
         private List<Pedido> pedidos = new List<Pedido>();
 
-        internal List<Pedido> Pedidos
+        public List<Pedido> Pedidos
         {
-            get { return pedidos; }
-            set { pedidos = value; }
+            get { return this.pedidos; }
+            set { this.pedidos = value; }
         }
 
-
+        public void Adiciona()
+        {
+            pedido = new Pedido();
+        }
     }
 }

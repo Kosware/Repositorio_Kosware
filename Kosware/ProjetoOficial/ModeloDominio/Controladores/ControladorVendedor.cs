@@ -1,16 +1,11 @@
 ﻿using Kosware_Helper_Dealer.Entidades;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoOficial.ModeloDominio.Controladores
 {
     class ControladorVendedor
     {
-
         private Vendedor vendedor;
         private List<Vendedor> vendedores = new List<Vendedor>();
 
